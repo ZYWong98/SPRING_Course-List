@@ -12,10 +12,12 @@ public class Project3Application implements CommandLineRunner{
         SpringApplication.run(Project3Application.class, args);
     }
 
+    //Initialize CourseService
     @Autowired
     private CourseService service;
 
     @Override
+    //Add initial rows
     public void run(String... args) throws Exception {
         service.add(new Course("ICS", "Programming", 0, true, "Example"));
         service.add(new Course("ICS", "Coding", 3, false, "Example 2"));

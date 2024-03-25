@@ -13,6 +13,7 @@ import java.util.List;
  */
 public class Courses {
     
+    //Initialize list of courses
     private List<Course> courses;
 
     public Courses() {
